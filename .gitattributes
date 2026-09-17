@@ -1,0 +1,12 @@
+# Everything in this repo is text, and it is LF everywhere.
+#
+# Why this file exists: line-ending behaviour is controlled by core.autocrlf,
+# which is a *global*, per-machine git setting (currently `input` on this
+# laptop). A per-machine setting fixes one surface and leaves every other one
+# alone — this repo is reachable from Claude Code on the laptop, from Cowork,
+# and from claude.ai/code against the GitHub mirror. The rule belongs to the
+# repo, not to a machine.
+#
+# Under CRLF, a .sh file's shebang breaks silently, and any byte-level
+# comparison starts reporting differences that are not really there.
+*       text=auto eol=lf

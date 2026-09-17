@@ -1,0 +1,31 @@
+# Google Drive shortcut stubs. Not files — pointers to Docs living online.
+# git cannot read them ("invalid argument") and one stub aborts the whole
+# `git add`, so this line is load-bearing, not tidiness.
+#
+# This working tree lives under G:\My Drive, so any Doc created or dropped
+# into the folder lands here as a stub. Convert such a Doc to real markdown
+# (or a real asset) and commit that — never the stub.
+*.gdoc
+*.gsheet
+*.gslides
+*.gdraw
+*.gform
+
+# Google Drive partial-upload scratch files
+.tmp.drive*
+*.crdownload
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# This site is hand-written HTML/CSS served straight from the repo by GitHub
+# Pages — there is no build step, so there is no build output to ignore and
+# nothing here may be generated. If a toolchain is ever added, whatever it
+# emits must be ignored explicitly; anything not ignored gets published.
